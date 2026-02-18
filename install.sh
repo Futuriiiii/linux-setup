@@ -248,6 +248,8 @@ ln -sf "$APPCONFIG_PATH/clangd/dotclang-tidy" ~/.clang-tidy
 # deploy configs by Profile manager
 ./deploy_configs.sh
 
+./lockscreen_configs.sh
+
 # finally source the correct rc file
 toilet All Done
 
