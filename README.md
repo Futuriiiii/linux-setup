@@ -3,11 +3,10 @@
 | Ubuntu               | Architecture | Status                                                                                                                                                           |
 | -------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 22.04 Jammy          | AMD64        | [![Jammy](https://github.com/Augusto-Viniciuss/linux-setup/actions/workflows/jammy.yml/badge.svg)](https://github.com/Augusto-Viniciuss/linux-setup/actions/workflows/jammy.yml)          |
-| 20.04 Focal          | AMD64        | [![Focal](https://github.com/Augusto-Viniciuss/linux-setup/actions/workflows/focal.yml/badge.svg)](https://github.com/Augusto-Viniciuss/linux-setup/actions/workflows/focal.yml)          |
 
 ## Summary
 
-This repo contains settings of Augusto's Linux work environment.
+This repo contains settings of Novack's Linux work environment.
 
 It could be summarized as follows:
 * **Ubuntu 22.04**
@@ -41,7 +40,7 @@ cd /tmp
 echo "mkdir -p ~/git
 cd ~/git
 sudo apt-get -y install git
-git clone https://github.com/LASER-Robotics/linux-setup.git
+git clone https://github.com/Futuriiiii/linux-setup.git
 cd linux-setup
 ./install.sh" > run.sh && source run.sh
 ```
