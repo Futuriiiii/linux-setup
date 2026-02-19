@@ -133,8 +133,8 @@ bash $APPCONFIG_PATH/tmuxinator/install.sh $subinstall_params
 sudo apt install flameshot
 
 # install OBS
-sudo add-apt-repository ppa:obsproject/obs-studio
-sudo apt install obs-studio
+sudo add-apt-repository -y ppa:obsproject/obs-studio
+sudo apt install -y obs-studio
 
 #############################################
 # remove the interactivity check from bashrc
