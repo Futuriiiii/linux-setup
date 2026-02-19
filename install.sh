@@ -86,9 +86,6 @@ bash $APPCONFIG_PATH/htop-vim/install.sh $subinstall_params
 # install FONTS POWERLINE
 ! $docker && bash $APPCONFIG_PATH/fonts-powerline/install.sh $subinstall_params
 
-# install NVIM
-# bash $APPCONFIG_PATH/nvim/install.sh $subinstall_params
-
 # install ZSH with ATHAME
 ! $docker && bash $APPCONFIG_PATH/zsh/install.sh $subinstall_params
 
@@ -101,17 +98,9 @@ bash $APPCONFIG_PATH/htop-vim/install.sh $subinstall_params
 # install PDFPC
 ! $docker && bash $APPCONFIG_PATH/pdfpc/install.sh $subinstall_params
 
-# install MULTIMEDIA support
-! $docker && bash $APPCONFIG_PATH/multimedia/install.sh $subinstall_params
-
 # install PANDOC
 if [ "$arch" != "aarch64" ]; then
   ! $docker && bash $APPCONFIG_PATH/pandoc/install.sh $subinstall_params
-fi
-
-# install SHUTTER
-if [ "$arch" != "aarch64" ]; then
-  ! $docker && bash $APPCONFIG_PATH/shutter/install.sh $subinstall_params
 fi
 
 # install ZATHURA
@@ -129,11 +118,6 @@ bash $APPCONFIG_PATH/silver_searcher/install.sh $subinstall_params
 # setup fuzzyfinder
 bash $APPCONFIG_PATH/fzf/install.sh $subinstall_params
 
-# install PLAYERCTL
-#if [ "$arch" != "aarch64" ]; then
-#  ! $docker && bash $APPCONFIG_PATH/playerctl/install.sh $subinstall_params
-#fi
-
 # install PAPIS
 ! $docker && bash $APPCONFIG_PATH/papis/install.sh $subinstall_params
 
@@ -147,6 +131,13 @@ fi
 
 # install TMUXINATOR
 bash $APPCONFIG_PATH/tmuxinator/install.sh $subinstall_params
+
+# install flameshot
+sudo apt install flameshot
+
+# install OBS
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt install obs-studio
 
 #############################################
 # remove the interactivity check from bashrc
