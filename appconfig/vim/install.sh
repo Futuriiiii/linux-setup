@@ -175,4 +175,5 @@ while true; do
   else
     echo " What? \"$resp\" is not a correct answer. Try y+Enter."
   fi
+  vim +PlugInstall +qall
 done
