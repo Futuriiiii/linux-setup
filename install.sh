@@ -129,12 +129,8 @@ fi
 # install TMUXINATOR
 bash $APPCONFIG_PATH/tmuxinator/install.sh $subinstall_params
 
-# install flameshot
-sudo apt install flameshot
-
-# install OBS
-sudo add-apt-repository -y ppa:obsproject/obs-studio
-sudo apt install -y obs-studio
+# install novack-extras
+bash $APPCONFIG_PATH/novack-extras/install.sh
 
 #############################################
 # remove the interactivity check from bashrc
@@ -237,7 +233,7 @@ ln -sf "$APPCONFIG_PATH/clangd/dotclang-tidy" ~/.clang-tidy
 ./deploy_configs.sh
 
 # install betterlockscreen
-./lockscreen_configs.sh
+bash $APPCONFIG_PATH/betterlockscreen/install.sh
 
 # finally source the correct rc file
 toilet All Done
