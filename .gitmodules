@@ -1,7 +1,3 @@
-[submodule "submodules/i3blocks-contrib"]
-	path = submodules/i3blocks-contrib
-	url = https://github.com/Futuriiiii/i3blocks-contrib.git
-	branch = master
 [submodule "submodules/tmux-themepack"]
 	path = submodules/tmux-themepack
 	url = https://github.com/jimeh/tmux-themepack.git
@@ -101,3 +97,7 @@
 [submodule "submodules/i3lock-color"]
 	path = submodules/i3lock-color
 	url = https://github.com/Raymo111/i3lock-color.git
+[submodule "submodules/i3blocks-contrib"]
+	path = submodules/i3blocks-contrib
+	url = https://github.com/Futuriiiii/i3blocks-contrib.git
+	branch = master
