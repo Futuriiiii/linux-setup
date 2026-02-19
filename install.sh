@@ -92,9 +92,6 @@ bash $APPCONFIG_PATH/htop-vim/install.sh $subinstall_params
 # install I3
 ! $docker && bash $APPCONFIG_PATH/i3/install.sh $subinstall_params
 
-# install LATEX and PDF support
-! $docker && bash $APPCONFIG_PATH/latex/install.sh $subinstall_params
-
 # install PDFPC
 ! $docker && bash $APPCONFIG_PATH/pdfpc/install.sh $subinstall_params
 
