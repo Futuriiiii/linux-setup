@@ -13,7 +13,10 @@ set $workspace6 "6"
 set $workspace7 "7"
 set $workspace8 "8"
 set $workspace9 "9"
-set $workspace10 "10"
+set $workspace10 "10: "
+
+exec --no-startup-id xset s off
+exec --no-startup-id xset -dpms
 
 # #{ override the default $workspace names and icos by custom settings
 
