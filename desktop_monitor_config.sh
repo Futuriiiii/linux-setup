@@ -19,6 +19,9 @@ XRANDR_LINES=$(cat <<EOF
 
 exec --no-startup-id xrandr --output $OUTPUT2 --mode $MODE2 --rate $RATE2 
 exec --no-startup-id xrandr --output $OUTPUT1 --mode $MODE1 --rate $RATE1 --right-of $OUTPUT2
+
+workspace $workspace1 output $OUTPUT2
+workspace $workspace10 output $OUTPUT1
 EOF
 )
 
