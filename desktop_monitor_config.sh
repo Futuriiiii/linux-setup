@@ -22,6 +22,8 @@ exec --no-startup-id xrandr --output $OUTPUT1 --mode $MODE1 --rate $RATE1 --righ
 
 workspace $workspace1 output $OUTPUT2
 workspace $workspace10 output $OUTPUT1
+
+exec --no-startup-id flameshot
 EOF
 )
 
