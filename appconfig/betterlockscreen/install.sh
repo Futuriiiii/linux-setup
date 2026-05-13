@@ -44,7 +44,8 @@ while true; do
       libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev \
       libxcb-image0-dev libxcb-util0-dev libxcb-xrm-dev \
       libxkbcommon-dev libxkbcommon-x11-dev \
-      libjpeg-dev libgif-dev
+      libjpeg-dev libgif-dev \
+      imagemagick 
 
     # Install i3lock-color
     cd ~/git/linux-setup/submodules/i3lock-color
